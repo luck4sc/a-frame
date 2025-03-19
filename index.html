@@ -1,6 +1,14 @@
 <html>
   <head>
     <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+    <style>
+      #snowfall {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;}
+    </style>
   </head>
   <body>
     <a-scene>
@@ -13,12 +21,13 @@
       <a-entity gltf-model="url(assets/Dead tree2.glb)" position="0 1.50 -5.4" scale="0.2 0.3 0.2" rotation="-45 0 0" ></a-entity>
       <a-entity gltf-model="url(assets/Staff.glb)" position="0 2.0 -6" scale="0.2 0.3 0.2" ></a-entity>
       <a-entity gltf-model="url(assets/Cat eyes.glb)" position="0.32 2.2 -5" scale="0.08 0.08 0.2" rotation="0 90 0" ></a-entity>
-
-
     
       <a-plane src="assets/snowfloor.jpg" position="0 0 -5" rotation="-90 0 0" width="100" height="100"></a-plane>
       <a-sky src="assets/skybox.png" ></a-sky>
     </a-scene>
+    
+    <img id="snowfall" src="assets/snow02.gif">
+
   </body>
 </html>
 
